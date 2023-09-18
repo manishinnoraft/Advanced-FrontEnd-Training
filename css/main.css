@@ -1,0 +1,182 @@
+@charset "UTF-8";
+button:hover {
+  cursor: pointer;
+}
+
+.sign_in_btn {
+  border: none;
+  color: #4d4c4d;
+  opacity: 0.7;
+  background-color: transparent;
+  margin-right: 1rem;
+}
+
+.left__content__div {
+  width: 50%;
+}
+.left__content__div h2 {
+  line-height: 3.5rem;
+  font-size: 4rem;
+  font-weight: 100;
+  opacity: 0.8;
+  font-family: "Lato";
+}
+.left__content__div p {
+  margin: 1.5rem 0;
+  color: #4d4c4d;
+}
+.left__content__div p:first-child {
+  color: #016A70;
+  font-weight: 500;
+  position: relative;
+  left: 4rem;
+  font-weight: 500;
+}
+.left__content__div p:first-child::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3px;
+  background: #f6c901;
+  left: -4rem;
+  top: 50%;
+  position: absolute;
+}
+
+.introdiv {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f5;
+}
+
+.intro__img {
+  width: 40%;
+}
+
+.field__div {
+  margin: 1rem 0;
+}
+
+.field__div__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.field__div__list--item {
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+.field__div__list--item::before {
+  content: "•";
+  color: #ffba0c;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-right: 1rem;
+}
+.field__div__list--item:first-child::before {
+  display: none;
+}
+
+.footer__div {
+  position: relative;
+  top: -4.5rem;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer__card {
+  margin: 0 0.5rem;
+  box-shadow: 0px 0px 3px 0px gray;
+  padding: 1rem;
+  background-color: white;
+}
+.footer__card h2 {
+  color: #016A70;
+}
+.footer__card p {
+  margin: 1rem 0;
+}
+.footer__card:hover {
+  background-color: #016A70;
+  cursor: pointer;
+}
+.footer__card:hover h2 {
+  color: #f6c901;
+}
+.footer__card:hover p {
+  color: white;
+}
+
+.horizontal__line {
+  height: 3px;
+  background-color: #f6c901;
+  border: none;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: Bebas;
+  src: url("../fonts/Lato/Lato-Regular.ttf    ");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas";
+}
+
+.container {
+  width: 100%;
+  background-color: #f4f4f5;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.inner-container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.nav {
+  padding: 1rem 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links--link {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  opacity: 0.7;
+  margin-right: 1rem;
+  color: #4d4c4d;
+}
+.nav__links--link:first-child {
+  color: #ffba0c;
+}
+
+.btnstyle {
+  background-color: #016A70;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+}
+
+.nav__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

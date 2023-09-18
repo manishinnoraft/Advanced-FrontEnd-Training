@@ -1,0 +1,22 @@
+@use '../partials/variables' as v;
+
+// This file contains the General CSS for the site
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas';
+}
+
+.container{
+    width: 100%;
+    background-color: v.$bgcolor;
+    height: max-content;
+}
+
+.inner-container{
+    margin: 0 auto;
+    max-width: 1180px;   
+}
+

@@ -1,0 +1,77 @@
+@use '../partials/variables' as v;
+
+// CSS for the left part of the Introduction Div
+.left__content__div {
+    width: 50%;
+
+    h2 {
+        line-height: 3.5rem;
+        font-size: 4rem;
+        font-weight: 100;
+        opacity: 0.8;
+        font-family: 'Lato';
+    }
+
+    p {
+        margin: 1.5rem 0;
+        color: v.$grey;
+    }
+
+    p:first-child {
+        color: v.$green;
+        font-weight: 500;
+        position: relative;
+        left: 4rem;
+        font-weight: 500;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 3rem;
+            height: 3px;
+            background: v.$yellow ;
+            left: -4rem;
+            top: 50%;
+            position: absolute;
+        }
+    }
+}
+
+.introdiv {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: v.$bgcolor;
+}
+
+.intro__img {
+    width: 40%;
+}
+
+.field__div {
+    margin: 1rem 0;
+}
+
+.field__div__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &--item {
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+        list-style-type: none;
+
+        &::before {
+            content: "\2022";
+            color: v.$orange;
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-right: 1rem;
+        }
+
+        &:first-child::before {
+            display: none;
+        }
+    }
+}

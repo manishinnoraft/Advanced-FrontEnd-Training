@@ -1,0 +1,33 @@
+@use '../partials/variables' as v;
+@use '../component/button' as b;
+@use '../partials/mixin' as m;
+
+.nav{
+    padding: 1rem 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links--link {
+    margin-left: 0.5rem;
+    text-decoration: none;
+    opacity: 0.7;
+    margin-right: 1rem;
+    color: v.$grey;
+
+    &:first-child {
+        color: v.$orange;
+    }
+}
+
+.btnstyle {
+    @include m.btnstyle;
+}
+
+.nav__logo{
+    position: absolute;
+    left: 50%;
+   transform: translateX(-50%);
+}

@@ -1,0 +1,15 @@
+@use '../partials/variables' as v;
+
+// CSS for the button
+
+button:hover{
+    cursor: pointer;
+}
+
+.sign_in_btn{
+    border:none;
+    color: v.$grey;
+    opacity: 0.7;
+    background-color: transparent;
+    margin-right: 1rem;
+}

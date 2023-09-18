@@ -1,0 +1,46 @@
+@use '../partials/variables' as v;
+@use 'introduction';
+
+// Applying CSS to the card div
+.footer__div {
+    position: relative;
+    top: -4.5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+// CSS for the particular card
+.footer__card {
+    margin: 0 0.5rem;
+    box-shadow: 0px 0px 3px 0px gray;
+    padding: 1rem;
+    background-color: white;
+    
+    h2 {
+        color: v.$green;
+    }
+    p {
+        margin: 1rem 0;
+    }
+
+    // CSS for hovering on the card
+    &:hover {
+        background-color: v.$green;
+        cursor: pointer;
+        h2 {
+            color: v.$yellow;
+        }
+        p {
+            color: white;
+        }
+    }
+}
+
+.horizontal__line {
+    height: 3px;
+    background-color: v.$yellow;
+    border: none;
+}
